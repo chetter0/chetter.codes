@@ -34,7 +34,7 @@ export default {
   color: white;
   border-bottom: 1px black;
   position: relative;
-  z-index: 10;
+  z-index: 20;
 }
 .nav-button {
   line-height: 25px;

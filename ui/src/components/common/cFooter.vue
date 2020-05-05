@@ -1,6 +1,8 @@
 <template>
   <div class="footer">
-    <div class="footer-container">FOOTER STUFF: Add links and tree images</div>
+    <div class="footer-container">
+      <span>Designed by Christie Etter</span>
+    </div>
     <img class="footer-trees" src="..\..\assets\trees.png" />
   </div>
 </template>
@@ -10,22 +12,32 @@ export default {
 };
 </script>
 <style scoped>
-.footer-container {
+.footer {
+  text-align: center;
+  width: 100%;
   position: absolute;
+  bottom: 0px;
+}
+.footer-container {
+  position: relative;
+  vertical-align: middle;
+  line-height: 1em;
+  font-size: 1em;
+  display: table;
   z-index: 10;
-  bottom: 20px;
-  left: 10px;
-  right: 10px;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.37);
   border-radius: 15px;
-  margin: 0px 20px;
-  padding: 5px 10px 30px;
-  color: black;
+  bottom: 5px;
+  padding: 5px 10px;
+  margin: auto;
+  color: white;
+  -webkit-backdrop-filter: blur(2px);
+  backdrop-filter: blur(2px);
 }
 .footer-trees {
   height: 600px;
   bottom: -200px;
-  position: absolute;
+  position: fixed;
   left: -85px;
   z-index: 5;
 }
