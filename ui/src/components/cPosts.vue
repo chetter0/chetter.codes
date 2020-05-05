@@ -24,13 +24,13 @@ export default {
     };
   },
   mounted() {
-    this.getPosts();
+    //this.getPosts();
   },
   methods: {
-    async getPosts() {
-      const response = await PostsService.fetchPosts();
-      this.posts = response.data;
-    }
+    // async getPosts() {
+    //   const response = await PostsService.fetchPosts();
+    //   this.posts = response.data;
+    // }
   }
 };
 </script>
