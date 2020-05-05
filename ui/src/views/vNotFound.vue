@@ -1,5 +1,5 @@
 <template>
-  <div class="hello">
+  <div class="view">
     <div class="hello-bulletin-outer">
       <div class="hello-bulletin-inner">
         <h1>404</h1>

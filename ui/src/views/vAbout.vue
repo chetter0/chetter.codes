@@ -24,6 +24,6 @@ export default {
 </script>
 <style scoped>
 .chetter-transparent {
-  color: rgba(0, 0, 0, 0.5);
+  color: rgba(149, 7, 156, 1);
 }
 </style>

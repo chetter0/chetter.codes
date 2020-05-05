@@ -9,9 +9,6 @@
     <div class="nav-button hoverable" @click="$router.push({ name: 'Blog' })">
       <span class="nav-button-text">Blog</span>
     </div>
-    <div class="nav-button hoverable" @click="$router.push({ name: 'catchall' })">
-      <span class="nav-button-text">404</span>
-    </div>
     <div class="nav-button float-right">
       <span class="nav-button-text">Chetter.Codes</span>
     </div>
@@ -36,6 +33,8 @@ export default {
   background-color: rgba(129, 7, 156, 1);
   color: white;
   border-bottom: 1px black;
+  position: relative;
+  z-index: 10;
 }
 .nav-button {
   line-height: 25px;
