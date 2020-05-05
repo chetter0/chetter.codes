@@ -9,17 +9,16 @@ let routes = [
     name: "Hello",
     component: () => import(/* webpackChunkName: "base" */ "@/views/vHello"),
   },
-  // {
-  //   path: "/posts",
-  //   name: "Posts",
-  //   component: () =>
-  //     import(/* webpackChunkName: "base" */ "@/components/cPosts"),
-  // },
-  // {
-  //   path: "/about",
-  //   name: "About",
-  //   component: () => import(/* webpackChunkName: "base" */ "@/views/vAbout"),
-  // },
+  {
+    path: "/blog",
+    name: "Blog",
+    component: () => import(/* webpackChunkName: "base" */ "@/views/vBlog"),
+  },
+  {
+    path: "/about",
+    name: "About",
+    component: () => import(/* webpackChunkName: "base" */ "@/views/vAbout"),
+  },
   {
     path: "*",
     name: "catchall",
@@ -33,9 +32,10 @@ let router = new VueRouter({
 });
 
 router.beforeEach((to, from, next) => {
+  //TODO: does there need to be any sort of authentication? Will there be a login portal?
   //console.log(store.getters.isAuthenticated());
   //console.log(store.getters.role);
-  if (to.meta.role) console.log(to.meta.role);
+  //if (to.meta.role) console.log(to.meta.role);
   // if (to.meta.auth) {
   //   if (!store.getters.isAuthenticated()) {
   //     next("/login");

@@ -6,11 +6,14 @@
     <div class="nav-button hoverable" @click="$router.push({ name: 'About' })">
       <span class="nav-button-text">About</span>
     </div>
+    <div class="nav-button hoverable" @click="$router.push({ name: 'Blog' })">
+      <span class="nav-button-text">Blog</span>
+    </div>
     <div class="nav-button hoverable" @click="$router.push({ name: 'catchall' })">
       <span class="nav-button-text">404</span>
     </div>
     <div class="nav-button float-right">
-      <span class="nav-button-text">Chetter Codes</span>
+      <span class="nav-button-text">Chetter.Codes</span>
     </div>
   </div>
 </template>

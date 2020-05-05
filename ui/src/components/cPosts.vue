@@ -1,16 +1,8 @@
 
 <template>
-  <div class="posts">
-    <h1>Posts</h1>This file will list all the posts.
-    <!-- <div v-for="post in posts">
-      <p>
-        <span>
-          <b>{{ post.title }}</b>
-        </span>
-        <br />
-        <span>{{ post.description }}</span>
-      </p>
-    </div>-->
+  <div class="view">
+    <h1>Blog Posts</h1>
+    <div class="blog-post">HELOO</div>
   </div>
 </template>
 
